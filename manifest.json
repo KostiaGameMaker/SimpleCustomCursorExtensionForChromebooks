@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "my cursor",
+  "version": "1.5",
+  "description": "makes you're cursor be a butterfly",
+  "permissions": [
+    "activeTab",
+    "offscreen"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "css": ["style.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["cursor.png"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "icons": {
+    "16": "cursor.png",
+    "32": "cursor.png",
+    "48": "cursor.png",
+    "128": "cursor.png"
+  }
+}

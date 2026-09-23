@@ -1,0 +1,28 @@
+
+* {
+  cursor: url('chrome-extension://__MSG_@@extension_id__/cursor.png') 16 16, auto !important;
+}
+
+
+a, button, input[type="submit"], input[type="button"], select, [role="button"], [cursor="pointer"] {
+  cursor: url('chrome-extension://__MSG_@@extension_id__/cursor_click.png') 16 16, auto !important;
+}
+
+.custom-sprite-container {
+  position: fixed;
+  pointer-events: none;
+  width: 64px;
+  height: 64px;
+  z-index: 999999;
+  transform: translate(-50%, -50%); 
+  color: rgb(97, 59, 166);
+}
+
+
+.custom-sprite-img {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
